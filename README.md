@@ -7,7 +7,7 @@
 
 The shortest path algorithm on the surface of OpenFOAM meshes. 
 
-Note: the code from the geodesic subdirectory is a clone of the [geodesic](https://code.google.com/archive/p/geodesic) project (the downloadable zip file `geodesic_cpp_03_02_2008.zip`). This project is licensend under the MIT License. See geodesic/readme.txt for further information.
+Note: the code from the geodesic subdirectory is a clone of the [geodesic](https://code.google.com/archive/p/geodesic) project (the downloadable zip file `geodesic_cpp_03_02_2008.zip`). This project is licensend under the [MIT License](https://opensource.org/licenses/mit-license.php). See geodesic/readme.txt for further information.
 
 
 ## Requirements
@@ -18,14 +18,15 @@ It might or might not work with newer versions of OpenFOAM (please test and let 
 
 ## Installation
 
-1. download source
+1. Download source
 ```
 git clone https://github.com/fospald/fastMarchingFoam.git
 ```
-2. run Allwmake, which uses the wmake tool of OpenFOAM
+2. Run Allwmake, which uses the wmake tool of OpenFOAM
 ```
 sh Allwmake
 ```
+This should build the `fastMrchingFoam` solver.
 
 
 ## Run Demo
