@@ -1,0 +1,9 @@
+EXE_INC = \
+	-Wno-char-subscripts -Wno-old-style-cast -Wno-unused-variable -Wno-unused-but-set-variable \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/meshTools/lnInclude \
+    -Igeodesic
+
+EXE_LIBS = \
+    -lfiniteVolume
+    
