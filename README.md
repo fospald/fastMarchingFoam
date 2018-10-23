@@ -7,7 +7,7 @@
 
 The shortest path algorithm on the surface of OpenFOAM meshes. 
 
-Note: the code from the geodesic subdirectory is a clone of the [geodesic](https://code.google.com/archive/p/geodesic) project (the downloadable zip file "geodesic_cpp_03_02_2008.zip"). This project is licensend under the MIT License. See geodesic/readme.txt for further information.
+Note: the code from the geodesic subdirectory is a clone of the [geodesic](https://code.google.com/archive/p/geodesic) project (the downloadable zip file `geodesic_cpp_03_02_2008.zip`). This project is licensend under the MIT License. See geodesic/readme.txt for further information.
 
 
 ## Requirements
@@ -30,7 +30,13 @@ sh Allwmake
 
 ## Run Demo
 
-
+The demo consists of a simple 1x1x2 box. The points and distance field names are specified in `constant/fastMarchingDict`.
+For this demo a distance filed `d` is generated, which gives the shortest distance to the point `(0.0 0.2 0.5)`. The `maxDist` parameter can be used perform the distance calculation only up to distance `maxDist` (in order to save computation time). Larger distances are then set to `maxDist`.
+```
+cd demo
+sh Allrun
+```
+This should run the solver, convert the results to VTK and open them in ParaView.
 
 
 ## Acknowledgements
