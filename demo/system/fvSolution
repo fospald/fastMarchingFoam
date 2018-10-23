@@ -11,44 +11,18 @@ FoamFile
     format      ascii;
     class       dictionary;
     location    "system";
-    object      fvSchemes;
+    object      fvSolution;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-ddtSchemes
+solvers
 {
-    default         backward;
 }
 
-gradSchemes
+PISO
 {
-    default         Gauss linear;
-}
-
-divSchemes
-{
-    default         Gauss linear;
-}
-
-laplacianSchemes
-{
-    default         Gauss linear corrected;
-}
-
-interpolationSchemes
-{
-    default         linear;
-}
-
-snGradSchemes
-{
-    default         corrected;
-}
-
-fluxRequired
-{
-    default         no;
-    p               ;
+    nCorrectors     1;
+    nNonOrthogonalCorrectors 0;
 }
 
 
