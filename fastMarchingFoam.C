@@ -203,7 +203,7 @@ public:
 		// in general, there could be multiple sources, but now we have only one
 		unsigned source_vertex_index = vertexIndex;
 		geodesic::SurfacePoint source(&pgeo_mesh->vertices()[source_vertex_index]);
-		std::vector<geodesic::SurfacePoint> all_sources(1,source);					
+		std::vector<geodesic::SurfacePoint> all_sources(1, source);
 
 		// calculated distances to all vertices (on surface)
 		pgeo_algorithm->propagate(all_sources, maxDist);
@@ -233,6 +233,7 @@ public:
 
 				// store distance in field d
 				d.boundaryField()[patchI][faceI] = (scalar)std::min(distance, maxDist);
+
 			}
 		}
 	}

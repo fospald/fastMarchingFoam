@@ -1,0 +1,5 @@
+#!/bin/sh
+blockMesh
+fastMarchingFoam
+foamToVTK
+paraview VTK/demo_0.vtk

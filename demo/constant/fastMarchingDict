@@ -12,7 +12,7 @@ FoamFile
 
 d 
 {
-	sourcePoint (0.1 0.1 0.1);
-	maxDist 0.5;
+	sourcePoint (0.0 0.2 0.5);
+	maxDist 3.0;
 };
 
