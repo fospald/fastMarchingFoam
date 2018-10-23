@@ -1,2 +1,0 @@
-mpirun -n 2 fastMarchingFoam -parallel
-
