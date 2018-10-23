@@ -3,21 +3,11 @@
   <a href="#" alt="no warranty"><img src="https://img.shields.io/badge/warranty-no-red.svg" /></a>
 </p>
 
-# fibergen
+# fastMarchingFoam
 
-A FFT-based homogenization tool.
+The shortest path algorithm on the surface of OpenFOAM meshes. 
 
-* FFT-based homogenization based on Lippmann-Schwinger equation with staggered grid approach \cite{SchneiderOspaldKabel2015:1}
-* homogenization for linear elasticity, large deformations, Stokes flow and heat equation
-* C++, OpenMP multiprocessing, XML + Python scripting interface
-* laminate mixing for interfaces \cite{KabelMerkertSchneider2014,SchneiderOspaldKabel2015:2}
-* mixed boundary conditions \cite{Kabel2016}
-* generation of fibers distributions
-* use of tetrahedrical mesh geometries
-* arbitrarily many materials
-* reading of raw CT data (gzip compressed)
-* identification of homogenized material parameters
-* ...
+Note: the code from the geodesic subdirectory is a clone of the [geodesic](https://code.google.com/archive/p/geodesic) project (the downloadable zip file "geodesic_cpp_03_02_2008.zip"). This project is licensend under the MIT License. See geodesic/readme.txt for further information.
 
 
 ## Requirements
